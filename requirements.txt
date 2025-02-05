@@ -1,0 +1,7 @@
+matplotlib
+tqdm
+flax
+diffrax
+ipykernel
+ipywidgets
+ipympl
