@@ -1,11 +1,11 @@
 # Learning reduced-order neural model structures
 
-This repository contains the Python code to reproduce the results of the paper Learning reduced-order neural model structures
+This repository contains the Python code to reproduce the results of the paper *Learning reduced-order neural model structures*
 
 
 ## Main files
 
-The main files to run are:
+The main files are:
 
 * [train_full_alldata.ipynb](train_full_alldata.ipynb): Train a single full-order model on the full training dataset
 * [test_full_alldata.ipynb](test_full_alldata.ipynb): Test the full-order model
@@ -16,11 +16,12 @@ The main files to run are:
 * [analyze_mc.ipynb](analyze_mc.ipynb): Analyze Monte Carlo experiments and obtain paper figures
 * [train_full_and_reduced.ipynb](train_full_and_reduced.ipynb): Train a single full-order model and a single reduced-order model on a single dataset, for illustration purpose
 
-Even though they have been developed as jupyter notebooks, it is preferrable to run them as scripts from the command line through ipython:
+It is preferrable to run the training files from the command line through ipython:
 
 ``
 $ ipython 
 ``
+
 ``
 run <file_name>
 ``
