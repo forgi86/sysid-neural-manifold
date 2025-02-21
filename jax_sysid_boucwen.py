@@ -6,7 +6,7 @@ Bouc-Wen benchmark.
 
 import numpy as np
 from jax_sysid.utils import compute_scores
-from jax_sysid.models import Model, find_best_model
+from jax_sysid.models import Model, find_best_model, LinearModel
 import jax
 import flax.linen as nn
 from pathlib import Path
@@ -68,9 +68,19 @@ nny = hidden_g
 
 def init_fcn(seed):
     np.random.seed(seed)
-    A = (np.random.rand(1)*.4+.5)*np.eye(nx)
-    B = 0.1*np.random.randn(nx, nu)
-    C = 0.1*np.random.randn(ny, nx)
+
+    if 1:
+        # Initialize linear model matrices using SYSID
+        lin_model = LinearModel(nx, ny, nu, feedthrough=False)
+        lin_model.loss(rho_x0=1.e-3, rho_th=1.e-2)
+        lin_model.optimization(adam_epochs=0, lbfgs_epochs=1000)
+        lin_model.fit(y_train, u_train)
+        A,B,C = lin_model.params
+    else:    
+        A = (np.random.rand(1)*.4+.5)*np.eye(nx)
+        B = 0.1*np.random.randn(nx, nu)
+        C = 0.1*np.random.randn(ny, nx)
+
     W1 = 0.1*np.random.randn(nnx, nx)
     W2 = 0.1*np.random.randn(nnx, nu)
     W3 = 0.1*np.random.randn(nx, nnx)
