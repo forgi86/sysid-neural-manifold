@@ -14,6 +14,7 @@ The main files to run are:
 * [meta_train.ipynb](meta_train.ipynb): Learn the reduced-order architecture on the data distribution (meta dataset)
 * [train_mc_reduced.ipynb](train_mc_reduced.ipynb): Train reduced-order models on sequences of different lengths
 * [analyze_mc.ipynb](analyze_mc.ipynb): Analyze Monte Carlo experiments and obtain paper figures
+* [train_full_and_reduced.ipynb](train_full_and_reduced.ipynb): Train a single full-order model and a single reduced-order model on a single dataset, for illustration purpose
 
 Even though they have been developed as jupyter notebooks, it is preferrable to run them as scripts from the command line through ipython:
 
