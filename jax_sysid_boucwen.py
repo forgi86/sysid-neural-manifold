@@ -87,9 +87,9 @@ def init_fcn(seed):
 # initialize model coefficients
 #model.init(init_fcn(seed=35))
 # L2-regularization on initial state and model coefficients
-model.loss(rho_x0=1.e-8, rho_th=1.e-12, tau_th=0.*1.e-3)
+model.loss(rho_x0=1.e-8, rho_th=1.e-16, tau_th=0.*1.e-3)
 # number of epochs for Adam and L-BFGS-B optimization
-model.optimization(adam_epochs=200, lbfgs_epochs=5000)
+model.optimization(adam_epochs=2000, lbfgs_epochs=10000)
 
 t0 = time.time()
 models = model.parallel_fit(y_train, u_train, init_fcn=init_fcn, seeds=range(cpu_count()))
