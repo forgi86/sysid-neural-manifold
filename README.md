@@ -1,6 +1,6 @@
 # Learning reduced-order neural model structures
 
-This repository contains the Python code to reproduce the results of the paper *Learning reduced-order neural model structures*
+This repository contains the Python code to reproduce the results of the paper *Manifold meta-learning for reduced-complexity\\neural system identification*
 
 
 ## Main files
