@@ -29,6 +29,6 @@ run <file_name>
 Additional python files:
 
 * [ae.py](ae.py) Autoencoder model blocks
-* [neuralss.py](neuralss.py) Neural state-space base learner model
+* [neuralss.py](neuralss.py) Neural state-space base architecture
 * [lr.py](lr.py) Learning rate scheduling
 * [plot_utils.py](plot_utils.py) Matplotlib settings for good-looking plots in papers
