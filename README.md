@@ -11,10 +11,12 @@ The main files are:
 * [test_full_alldata.ipynb](test_full_alldata.ipynb): Test the full-order model
 * [linear_identification.m](linear_identification.m): Linear identification baseline
 * [train_mc_full.ipynb](train_mc_full.ipynb): Train full-order models on training datasets of different lengths
-* [meta_train.ipynb](meta_train.ipynb): Learn the reduced-order architecture on the data distribution (meta dataset)
+* [meta_train.ipynb](meta_train.ipynb): Learn the reduced-order architecture on the meta dataset
 * [train_reduced_mc.ipynb](train_reduced_mc.ipynb): Train reduced-order models on sequences of different lengths
 * [analyze_mc.ipynb](analyze_mc.ipynb): Analyze Monte Carlo experiments and obtain paper figures
 * [train_full_and_reduced.ipynb](train_full_and_reduced.ipynb): Train a single full-order model and a single reduced-order model on a single dataset, for illustration purpose
+* [meta_train_maml.ipynb](meta_train_maml.ipynb): Learn a parameter initialization on the meta dataset with MAML
+* [train_maml_mc.ipynb](train_maml_mc.ipynb): Train full-order models with MAML initialization on training datasets of different lengths
 
 It is preferrable to run the training files from the command line through ipython:
 
