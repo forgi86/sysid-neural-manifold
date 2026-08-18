@@ -1,6 +1,6 @@
 # Learning reduced-order neural model structures
 
-This repository accompanies the paper *Manifold meta-learning for reduced-complexity neural system identification* by M.Forgione, A.Chakrabarty, D. Piga, M. Rufolo and A.Bemporad (Automatica, 2026)
+This repository accompanies the paper *Manifold meta-learning for reduced-complexity neural system identification* by Marco Forgione, Ankush Chakrabarty, Dario Piga, Mattei Rufolo and Alberto Bemporad (Automatica, 2026)
 
 
 ## Main files
